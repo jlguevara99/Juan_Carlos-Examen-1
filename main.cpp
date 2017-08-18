@@ -163,6 +163,8 @@ void agregarFamilia(FamiliaStark* famSta, FamiliaLannister* famLan, FamiliaTarga
 					 printw("Animal Emblema: ");
 					 char aniEmb[80];
 					 getstr(aniEmb);
+
+
 				 }
 				 break;
 		default:{
