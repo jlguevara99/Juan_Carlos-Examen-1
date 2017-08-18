@@ -174,18 +174,95 @@ void agregarFamilia(FamiliaStark* famSta, FamiliaLannister* famLan, FamiliaTarga
 					 getstr(aniEmb);
 
 					 string a = lobHua;
-					 float lobHuaNum = stof(a);
+					 //float lobHuaNum = stof(a);
 
 					 famSta = new FamiliaStark();
 
 					 (*famSta).setJefe(jefFam);
 					 (*famSta).setAnimal(aniEmb);
-					 (*famSta).setLobo(lobHuaNum);
+					 //(*famSta).setLobo(lobHuaNum);
 
 					 mostrarMensaje(2);
 					 getch();
 				 }
 				 break;
+
+		case 'b':{
+					 clear();
+
+					 move(10, 20);
+					 printw("Agregar Familia");
+					 move(11, 10);
+					 printw("Ingrese los datos requeridos");
+					 move(12, 10);
+					 printw("-------------------------------------");
+					 move(13, 17);
+					 printw("Jefe de Familia: ");
+					 char jefFam[80];
+					 getstr(jefFam);
+
+					 move(14, 17);
+					 printw("Cantidad de Lobos Huargos: ");
+					 char lobHua[10];
+					 getstr(lobHua);
+
+					 move(15, 17);
+					 printw("Animal Emblema: ");
+					 char aniEmb[80];
+					 getstr(aniEmb);
+
+					 string a = lobHua;
+					 //float lobHuaNum = stof(a);
+
+					 famSta = new FamiliaStark();
+
+					 (*famSta).setJefe(jefFam);
+					 (*famSta).setAnimal(aniEmb);
+					 //(*famSta).setLobo(lobHuaNum);
+
+					 mostrarMensaje(2);
+					 getch();
+				 }
+				 break;
+		case 'c':{
+					 clear();
+
+					 move(10, 20);
+					 printw("Agregar Familia");
+					 move(11, 10);
+					 printw("Ingrese los datos requeridos");
+					 move(12, 10);
+					 printw("-------------------------------------");
+					 move(13, 17);
+					 printw("Jefe de Familia: ");
+					 char jefFam[80];
+					 getstr(jefFam);
+
+					 move(14, 17);
+					 printw("Cantidad de Lobos Huargos: ");
+					 char lobHua[10];
+					 getstr(lobHua);
+
+					 move(15, 17);
+					 printw("Animal Emblema: ");
+					 char aniEmb[80];
+					 getstr(aniEmb);
+
+					 string a = lobHua;
+					 //float lobHuaNum = stof(a);
+
+					 famSta = new FamiliaStark();
+
+					 (*famSta).setJefe(jefFam);
+					 (*famSta).setAnimal(aniEmb);
+					 //(*famSta).setLobo(lobHuaNum);
+
+					 mostrarMensaje(2);
+					 getch();
+				 }
+				 break;
+
+
 		default:{
 					mostrarMensaje(0);
 				}
