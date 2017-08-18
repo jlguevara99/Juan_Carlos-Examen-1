@@ -1,4 +1,5 @@
 #include "Combatiente.h"
+#pragma once
 
 class FamiliaNoble : public Combatiente{
 	private:
