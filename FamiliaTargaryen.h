@@ -1,6 +1,8 @@
 #ifndef FAMILIATARGARYEN_H
 #define FAMILIATARGARYEN_H
 #include <string>
+#include "Dothraki.h"
+#include "Dragon.h"
 using namespace std;
 
 

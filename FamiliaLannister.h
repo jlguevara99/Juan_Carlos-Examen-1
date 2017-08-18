@@ -1,6 +1,7 @@
 #ifndef FAMILIALANNISTER_H
 #define FAMILIALANNISTER_H
 #include<string>
+#include "GuardiaReal.h"
 using namespace std;
 
 class FamiliaLannister{

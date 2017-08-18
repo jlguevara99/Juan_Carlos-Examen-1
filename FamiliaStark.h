@@ -1,6 +1,7 @@
 #ifndef FAMILIASTARK_H
 #define FAMILIASTARK_H
 #include<string>
+#include "FamiliaNoble.h"
 using namespace std;
 
 
