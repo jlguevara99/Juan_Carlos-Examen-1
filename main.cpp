@@ -9,6 +9,7 @@
 #include "GuardiaReal.h"
 
 using namespace std;
+
 char menu();
 void mostrarMensaje(int);
 void agregarFamilia(FamiliaStark*, FamiliaLannister*, FamiliaTargaryen*);
@@ -26,11 +27,10 @@ int main(){
 	//wbkgd(WindowName, COLOR_PAIR(1));
 
 	refresh();
-
 	char opcion = 's';
+
 	while(opcion != 'x'){
 		opcion = menu();
-
 		switch(opcion){
 			case 'a':{
 						 agregarFamilia(famSta, famLan, famTar);
@@ -107,9 +107,20 @@ void mostrarMensaje(int codigo){
 				   move(12, 10);
 
 			   };
+			   break;
+		case 2:{
+				   clear();
+				   move(10, 23);
+				   printw("[Exito]");
+				   move(11, 10);
+				   printw("Familia añadida exitosamente");
+				   move(12, 10);
+
+			   }
+			   break;
 		default:
 			   break;
-	}FamiliaLannister* famLan;
+	}
 
 
 }
@@ -139,8 +150,6 @@ void agregarFamilia(FamiliaStark* famSta, FamiliaLannister* famLan, FamiliaTarga
 
 	switch(op){
 		case 'a':{
-					 famSta = new FamiliaStark();
-
 					 clear();
 
 					 move(10, 20);
@@ -149,7 +158,6 @@ void agregarFamilia(FamiliaStark* famSta, FamiliaLannister* famLan, FamiliaTarga
 					 printw("Ingrese los datos requeridos");
 					 move(12, 10);
 					 printw("-------------------------------------");
-
 					 move(13, 17);
 					 printw("Jefe de Familia: ");
 					 char jefFam[80];
@@ -159,12 +167,23 @@ void agregarFamilia(FamiliaStark* famSta, FamiliaLannister* famLan, FamiliaTarga
 					 printw("Cantidad de Lobos Huargos: ");
 					 char lobHua[10];
 					 getstr(lobHua);
+
 					 move(15, 17);
 					 printw("Animal Emblema: ");
 					 char aniEmb[80];
 					 getstr(aniEmb);
 
+					 string a = lobHua;
+					 float lobHuaNum = stof(a);
 
+					 famSta = new FamiliaStark();
+
+					 (*famSta).setJefe(jefFam);
+					 (*famSta).setAnimal(aniEmb);
+					 (*famSta).setLobo(lobHuaNum);
+
+					 mostrarMensaje(2);
+					 getch();
 				 }
 				 break;
 		default:{
