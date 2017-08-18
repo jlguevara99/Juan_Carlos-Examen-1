@@ -1,3 +1,6 @@
+#ifndef GUARDIAREAL_H
+#define GUARDIAREAL_H
+
 #include "Combatiente.h"
 
 class GuardiaReal{
@@ -14,3 +17,5 @@ class GuardiaReal{
 		int getEdad();
 		string getTipoSoldado();
 };
+
+#endif

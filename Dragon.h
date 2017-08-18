@@ -1,3 +1,6 @@
+#ifndef DRAGON_H
+#define DRAGON_H
+
 #include "Combatiente.h"
 
 class Dragon{
@@ -14,3 +17,5 @@ class Dragon{
 		float getTamano();
 		float getDistanciaLlama();
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef DOTHRAKI_H
+#define DOTHRAKI_H
+
 #include "Combatiente.h"
 
 class Dothraki : public Combatiente{
@@ -14,3 +17,5 @@ class Dothraki : public Combatiente{
 		string getNombreCaballo();
 		string getColorCaballo();
 };
+
+#endif

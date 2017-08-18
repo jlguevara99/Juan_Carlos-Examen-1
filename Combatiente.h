@@ -1,7 +1,10 @@
+#ifndef COMBATIENTE_H
+#define COMBATIENTE_H
+
 #include <string>
 using namespace std;
 
-class Combatiente(){
+class Combatiente{
 	private:
 		string nombre;
 		float ataque;
@@ -15,3 +18,5 @@ class Combatiente(){
 		float getAtaque();
 		float getDefensa();		
 };
+
+#endif
