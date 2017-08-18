@@ -1,5 +1,5 @@
 main: main.o Combatiente.o Dothraki.o Dragon.o FamiliaLannister.o FamiliaNoble.o FamiliaStark.o FamiliaTargaryen.o GuardiaReal.o
-	g++ Combatiente.o Dothraki.o Dragon.o FamiliaLannister.o FamiliaNoble.o FamiliaStark.o FamiliaTargaryen.o GuardiaReal.o main.o -o main
+	g++ Combatiente.o Dothraki.o Dragon.o FamiliaLannister.o FamiliaNoble.o FamiliaStark.o FamiliaTargaryen.o GuardiaReal.o main.o -lncurses -o main
 
 main.o: main.cpp Combatiente.h Dothraki.h Dragon.h FamiliaLannister.h FamiliaNoble.h FamiliaStark.h FamiliaTargaryen.h GuardiaReal.h
 	g++ -c main.cpp
@@ -29,5 +29,5 @@ GuardiaReal.o: GuardiaReal.h GuardiaReal.cpp
 	g++ -c GuardiaReal.cpp
 
 clean:
-	rm *.o main
+	rm -f *.o main
 
