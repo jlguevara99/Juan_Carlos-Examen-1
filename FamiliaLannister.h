@@ -15,7 +15,7 @@ class FamiliaLannister{
 		int sizeEjercito;
 		
 	public:
-		FamiliaLanister();
+		FamiliaLannister();
 		string getJefe();
 		string getAnimal();
 		string getLema();
